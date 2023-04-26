@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700');
+
+body {
+	font-family: "Quicksand", sans-serif;
+	background-image: url("montana.jpg");
+	background-size: 100% auto;
+	background-color:#202126;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+div.splash {
+	border-style:solid;
+	margin-top: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+h1 {
+	margin:0px;
+	border-style:solid;
+	font-size: 10vw;
+	font-weight: 400;
+}
+
+ul {
+	margin:0px;
+	border-style:solid;
+	list-style: none;
+	display: inline-block;
+	font-size: 2em;
+}
+
+ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
