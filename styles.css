@@ -2,11 +2,64 @@
 
 body {
 	font-family: "Quicksand", sans-serif;
+	color: white;
+	text-shadow: 0 0 6px black;
+}
+
+#landingbody {
 	background-image: url("montana.jpg");
 	background-size: 100% auto;
-	background-color:#202126;
 	background-repeat: no-repeat;
-	color: white;
+	background-color:#202126;
+	background-attachment: fixed;
+}
+
+#citygrid {
+	display: grid;
+	grid-template: 
+		"header nav" auto / 66% auto,
+		"header nav" auto / 66% auto;
+}
+
+#landinggrid {
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 5vw;
+	margin-bottom: 5vw;
+	display: grid;
+	grid-template: "section aside" auto / 66% auto;
+}
+
+div.splash {
+	margin-top: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+nav {
+	grid-area: nav;
+}
+
+section {
+	grid-area: section;
+}
+
+header {
+	grid-area: header;
+}
+
+aside {
+	grid-area: aside;
+}
+
+p {
+	text-indent: 4vw;
+	font-size: 1.5vw;
 }
 
 a {
@@ -14,30 +67,35 @@ a {
 	text-decoration: none;
 }
 
-div.splash {
-	border-style:solid;
-	margin-top: 15vw;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
+a:hover {
+	font-weight: 600;
 }
 
 h1 {
 	margin:0px;
-	border-style:solid;
 	font-size: 10vw;
+	font-weight: 400;
+}
+
+h2 {
+	margin:0px;
+	font-size:2vw;
 	font-weight: 400;
 }
 
 ul {
 	margin:0px;
-	border-style:solid;
+	padding: 0px;
 	list-style: none;
 	display: inline-block;
-	font-size: 2em;
 }
 
 ul li {
 	display: inline-block;
 	margin-right: 10px;
+	font-size: 2vw;
+}
+
+ol li {
+	font-size: 1.5vw;
 }
